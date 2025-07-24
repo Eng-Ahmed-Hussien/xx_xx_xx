@@ -1,0 +1,70 @@
+@import "tailwindcss";
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #0A0F1F;
+  font-weight: bold;
+}
+
+/* Loading */
+.name span{
+  font-weight: bolder;
+  display: inline-block;
+  animation: load 1.4s infinite ease-in-out;
+}
+.name span:nth-child(1) { animation-delay: .1s; color: #4A90E2;}
+.name span:nth-child(2) { animation-delay: .2s; color: #4A90E2;}
+.name span:nth-child(3) { animation-delay: .3s; color: #4A90E2;}
+.name span:nth-child(4) { animation-delay: .4s; color: #4A90E2;}
+.name span:nth-child(5) { animation-delay: .5s; }
+.name span:nth-child(6) { animation-delay: .6s; color: #4A90E2;}
+.name span:nth-child(7) { animation-delay: .7s; color: #4A90E2;}
+.name span:nth-child(8) { animation-delay: .8s; color: #4A90E2;}
+.name span:nth-child(9) { animation-delay: .9s; color: #4A90E2;}
+.name span:nth-child(10) { animation-delay: 1s; color: #4A90E2;}
+@keyframes load {
+  0% , 100% {
+    transform: translateY(0);
+    color: #FF6F91;
+  }
+  50% {
+    transform: translateY(-40px);
+    color: #4A90E2;
+  }
+}
+/* Header */
+.words {
+  background: linear-gradient(to left, #4A90E2, #FF6F91);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.jop_name {
+  font-size: 18px;
+  width: 165px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #FF6F91;
+  animation: typing 3s steps(20, end) infinite, cursor .3s steps(2, end) infinite;
+}
+@keyframes typing {
+  0% { width: 0 }
+  100% { width: 165px }
+}
+@keyframes cursor {
+  50% { border-color: transparent }
+}
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0F1F;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4A90E2;
+  border-radius: 10px;
+  border: 2px solid #0A0F1F;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2b80e0;
+}

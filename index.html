@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta name="author" content="A7med Hussien" />
+    <meta name="description" content="A7med Hussien Portfolio" />
+    <meta
+      name="keywords"
+      content="A7med Hussien, Portfolio, Web Developer, Frontend Developer"
+    />
+    <!-- Favicon link we can swap dynamically -->
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="/assets/logo.svg"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>A7med Hussien | Portfolio</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- <script>
+      // ——————————————————————————————
+      // Block DevTools, right‑click, drag & select
+      // ——————————————————————————————
+      document.addEventListener('contextmenu', (e) => e.preventDefault());
+      document.addEventListener('dragstart', (e) => e.preventDefault());
+      document.addEventListener('selectstart', (e) => e.preventDefault());
+
+      document.addEventListener('keydown', (e) => {
+        const key = e.key.toUpperCase();
+        // F12
+        if (key === 'F12') e.preventDefault();
+
+        // Ctrl+Shift+I / C / J
+        if (e.ctrlKey && e.shiftKey && ['I', 'C', 'J'].includes(key))
+          e.preventDefault();
+
+        // Ctrl+U (view source), Ctrl+S (save)
+        if (e.ctrlKey && ['U', 'S'].includes(key)) e.preventDefault();
+      });
+
+      // Rudimentary DevTools-open detector
+      let devtoolsOpen = false;
+      const threshold = 160;
+      setInterval(() => {
+        const widthDiff = window.outerWidth - window.innerWidth;
+        const heightDiff = window.outerHeight - window.innerHeight;
+        const isOpen = widthDiff > threshold || heightDiff > threshold;
+
+        if (isOpen && !devtoolsOpen) {
+          devtoolsOpen = true;
+          console.warn('🔧 DevTools detected — please close it.');
+        } else if (!isOpen) {
+          devtoolsOpen = false;
+        }
+      }, 1000);
+
+      // ——————————————————————————————
+      // Change title & favicon on tab visibility
+      // ——————————————————————————————
+      const faviconEl = document.getElementById('favicon');
+      const originalTitle = document.title;
+      const originalFavicon = faviconEl.href;
+
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+          document.title = originalTitle;
+          faviconEl.href = originalFavicon;
+        } else {
+          document.title = 'Come Back To Portfolio';
+          faviconEl.href = '/assets/favhand.png';
+        }
+      });
+    </script> -->
+  </body>
+</html>
