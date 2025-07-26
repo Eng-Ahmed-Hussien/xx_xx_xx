@@ -2,8 +2,8 @@ import { lazy, Suspense } from "react";
 import { Helmet } from "react-helmet";
 import { FadeLoader } from "react-spinners";
 import { logo } from "../../public/assets";
-const ProjectDetails = lazy(() => import("../Components/ProjectDetails"));
-const ProjectDetailsPage = () => {
+const ContactUs = lazy(() => import("../Components/ContactUs"));
+const Contact = () => {
   return (
     <>
       <Helmet>
@@ -37,10 +37,10 @@ const ProjectDetailsPage = () => {
           </div>
         }
       >
-        <ProjectDetails />
+        <ContactUs />
       </Suspense>
     </>
   );
 };
 
-export default ProjectDetailsPage;
+export default Contact;

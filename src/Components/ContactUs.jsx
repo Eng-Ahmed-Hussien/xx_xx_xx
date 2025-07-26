@@ -28,7 +28,7 @@ const Contact = () => {
     Aos.refresh();
   }, []);
   return (
-    <section id="contact" className="bg-[#0A0F1F] pb-20">
+    <section id="contact" className="bg-[#0A0F1F] pt-35 pb-15">
       <div
         className={`container mx-auto px-[5%] grid grid-cols-1 lg:grid-cols-2`}
       >
@@ -63,7 +63,7 @@ const Contact = () => {
                   target="_blank"
                 >
                   <FaLinkedin
-                    className="hover:text-white hover:scale-120 text-[#0A66C2] transition duration-300"
+                    className="text-white hover:text-[#0A66C2] transition duration-300"
                     size={20}
                   />
                 </a>
@@ -72,7 +72,7 @@ const Contact = () => {
                   target="_blank"
                 >
                   <FaWhatsapp
-                    className="hover:text-white hover:scale-120 text-[#25D366] transition duration-300"
+                    className="text-white hover:text-[#25D366] transition duration-300"
                     size={20}
                   />
                 </a>
@@ -81,21 +81,18 @@ const Contact = () => {
                   target="_blank"
                 >
                   <FaFacebook
-                    className="hover:text-white hover:scale-120 text-[#1877F2] transition duration-300"
+                    className="text-white hover:text-[#1877F2] transition duration-300"
                     size={20}
                   />
                 </a>
                 <a href="https://t.me/moody1352" target="_blank">
                   <FaTelegramPlane
-                    className="hover:text-white hover:scale-120 text-[#0088cc] transition duration-300"
+                    className="text-white hover:text-[#0088cc] transition duration-300"
                     size={20}
                   />
                 </a>
                 <a href="https://github.com/Eng-Ahmed-Hussien" target="_blank">
-                  <FaGithub
-                    className="hover:text-[#afadad] hover:scale-120 text-white transition duration-300"
-                    size={20}
-                  />
+                  <FaGithub className="text-white" size={20} />
                 </a>
               </div>
             </div>

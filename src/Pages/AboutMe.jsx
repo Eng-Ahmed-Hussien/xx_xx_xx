@@ -1,19 +1,13 @@
 import { lazy, Suspense } from "react";
+import { Helmet } from "react-helmet";
 import { FadeLoader } from "react-spinners";
-const Header = lazy(() => import("../Components/Header"));
-const Service = lazy(() => import("../Components/Service"));
+import { logo } from "../../public/assets";
+const AboutMe = lazy(() => import("../Components/About"));
 const Education = lazy(() => import("../Components/Education"));
 const Skill = lazy(() => import("../Components/Skill"));
-const Experience = lazy(() => import("../Components/Experience"));
 const ProfessionalStats = lazy(() => import("../Components/ProfessionalStats"));
-const Portfolio = lazy(() => import("../Components/Portfolio"));
-const Contact = lazy(() => import("../Components/Contact"));
-const AboutMe = lazy(() => import("../Components/About"));
 
-import { Helmet } from "react-helmet";
-import { logo } from "../../public/assets";
-
-const Home = () => {
+const About = () => {
   return (
     <>
       <Helmet>
@@ -47,27 +41,7 @@ const Home = () => {
           </div>
         }
       >
-        <Header />
-      </Suspense>
-
-      <Suspense
-        fallback={
-          <div className="bg-[#0A0F1F] h-[100vh] flex items-center justify-center">
-            <FadeLoader color="#FF6F91" />
-          </div>
-        }
-      >
-        <Service />
-      </Suspense>
-
-      <Suspense
-        fallback={
-          <div className="bg-[#0A0F1F] h-[100vh] flex items-center justify-center">
-            <FadeLoader color="#FF6F91" />
-          </div>
-        }
-      >
-        <Experience />
+        <AboutMe />
       </Suspense>
       <Suspense
         fallback={
@@ -76,7 +50,7 @@ const Home = () => {
           </div>
         }
       >
-        <Portfolio />
+        <ProfessionalStats />
       </Suspense>
       <Suspense
         fallback={
@@ -85,10 +59,28 @@ const Home = () => {
           </div>
         }
       >
-        <Contact />
+        <Education />
+      </Suspense>
+      <Suspense
+        fallback={
+          <div className="bg-[#0A0F1F] h-[100vh] flex items-center justify-center">
+            <FadeLoader color="#FF6F91" />
+          </div>
+        }
+      >
+        <Education />
+      </Suspense>
+      <Suspense
+        fallback={
+          <div className="bg-[#0A0F1F] h-[100vh] flex items-center justify-center">
+            <FadeLoader color="#FF6F91" />
+          </div>
+        }
+      >
+        <Skill />
       </Suspense>
     </>
   );
 };
 
-export default Home;
+export default About;
